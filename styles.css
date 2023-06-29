@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #343a34;
+    background-color: #ffe8cc;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.383), rgba(0, 0, 0, 0.309));
+    align-items: center;
+    padding: 24px;
+    color: #fff;
+}
+
+header h1 {
+    grid-column: 2 / 6;
+}
+
+header nav {
+    grid-column: span 6;
+    justify-self: end;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    margin-left: 1em;
+}
+
+section {
+    margin: 100px auto;
+    max-width: 1200px;
+}
+
+section img {
+    width: 100%;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.laptop {
+    grid-column: span 6;
+    background-color: #fff;
+}
+
+.outside {
+    grid-column: 1/7;
+    background-color: #fff;
+}
+
+.welcome, .payment {
+    grid-column: 8/13;
+    background-color: #fff;
+    padding: 16px 32px;
+    border-radius: 12px;
+}
+
+.welcome {
+    grid-row: 1;
+}
+
+.welcome h2, .payment h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.welcome p, .payment p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.cost {
+    grid-column: span 12;
+    text-align: center;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+.laptops {
+    grid-column: span 4;
+    border-radius: 8px;
+}
+
+.laptop-sale {
+    background-color: #fff;
+    padding: 32px;
+}
+

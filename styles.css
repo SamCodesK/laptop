@@ -47,18 +47,20 @@ section {
 
 section img {
     width: 100%;
-    padding: 8px;
+  
     border-radius: 12px;
 }
 
 .laptop {
     grid-column: span 6;
     background-color: #fff;
+    padding: 8px;
 }
 
 .outside {
     grid-column: 1/7;
     background-color: #fff;
+    padding: 8px;
 }
 
 .welcome, .payment {
@@ -88,15 +90,65 @@ section img {
     text-align: center;
     padding-top: 1em;
     font-size: 2em;
+    margin-bottom: 1em;
 }
 
 .laptops {
     grid-column: span 4;
     border-radius: 8px;
+    background-color: #fff;
 }
 
 .laptop-sale {
-    background-color: #fff;
     padding: 32px;
 }
 
+.laptop-sale h3 {
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+figure img {
+  height: 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.icon {
+    width: 28px;
+    height: 28px;
+    stroke: #ff922b;
+}
+
+.laptop-details {
+   list-style: none;
+   margin-bottom: 2em;
+}
+
+.laptop-details li {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.laptop-price {
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.laptop-price strong {
+    font-size: 24px;
+}
+
+.laptop-price a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff922b;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+}

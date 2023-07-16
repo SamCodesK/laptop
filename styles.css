@@ -43,6 +43,11 @@ header {
     color: #fff;
 }
 
+.header-container {
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
 
 header a {
     text-decoration: none;
@@ -144,7 +149,7 @@ section img {
 
 .laptop-details span {
     font-size: 1.4rem;
-    
+
 }
 
 .laptop-price {
@@ -155,7 +160,7 @@ section img {
 }
 
 .laptop-price strong {
-    font-size: 24px;
+    font-size: 2rem;
 }
 
 .laptop-price a {
